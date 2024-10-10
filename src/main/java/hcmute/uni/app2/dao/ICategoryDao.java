@@ -1,9 +1,9 @@
-package hcmute.uni.app2.services;
+package hcmute.uni.app2.dao;
 
 import hcmute.uni.app2.entities.Category;
 import java.util.List;
 
-public interface ICategoryService {
+public interface ICategoryDao {
     Category findById(int id);
     List<Category> findAll();
     void insert(Category category);
@@ -11,5 +11,5 @@ public interface ICategoryService {
     void delete(int id);
     List<Category> findByName(String name);
     int count();
-    List<Category> findAll(int page, int pagesize);
+    List<Category> findAll(int page, int pageSize);
 }

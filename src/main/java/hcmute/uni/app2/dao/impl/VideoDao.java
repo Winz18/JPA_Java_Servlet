@@ -1,6 +1,7 @@
-package hcmute.uni.app2.dao;
+package hcmute.uni.app2.dao.impl;
 
 import hcmute.uni.app2.configs.JPAConfig;
+import hcmute.uni.app2.dao.IVideoDao;
 import hcmute.uni.app2.entities.Video;
 
 import jakarta.persistence.EntityManager;

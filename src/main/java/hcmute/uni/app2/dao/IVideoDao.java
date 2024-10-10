@@ -1,4 +1,4 @@
-package hcmute.uni.app2.dao.interfaces;
+package hcmute.uni.app2.dao;
 
 import hcmute.uni.app2.entities.Video;
 
