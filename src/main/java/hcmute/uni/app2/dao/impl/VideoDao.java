@@ -6,6 +6,7 @@ import hcmute.uni.app2.entities.Video;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 
 import java.util.List;
@@ -131,10 +132,9 @@ public class VideoDao implements IVideoDao
     @Override
     public int count()
     {
-//        EntityManager enma = JPAConfig.getEntityManager();
-//        String jpql = "SELECT count(c) FROM Video v";
-//        Query query = enma.createQuery(jpql);
-//        return ((Long) query.getSingleResult()).intValue();
-        return 0;
+        EntityManager enma = JPAConfig.getEntityManager();
+        String jpql = "SELECT count(v) FROM Video v";
+        Query query = enma.createQuery(jpql);
+        return ((Long) query.getSingleResult()).intValue();
     }
 }
