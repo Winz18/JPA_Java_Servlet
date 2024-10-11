@@ -1,4 +1,4 @@
-package hcmute.uni.app2.controllers;
+package hcmute.uni.app2.controllers.admin;
 
 import hcmute.uni.app2.services.ICategoryService;
 import hcmute.uni.app2.services.impl.CategoryServiceImpl;
